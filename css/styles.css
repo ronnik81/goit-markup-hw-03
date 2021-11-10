@@ -59,7 +59,7 @@ body {
 
 /* ----------------- HEADER CONTACTS ----------------- */
 
-.contact-list {
+.header-contact-list {
   list-style: none;
   font-size: 14px;
   font-weight: 500;
@@ -67,13 +67,13 @@ body {
   letter-spacing: 0.02em;
 }
 
-.contact-item-link {
+.header-contact-link {
   color: var(--brand-color-text);
   text-decoration: none;
 }
 
-.contact-item-link:hover,
-.contact-item-link:focus {
+.header-contact-link:hover,
+.header-contact-link:focus {
   color: var(--brand-color-focus);
 }
 
@@ -205,26 +205,37 @@ body {
 
 /* ----------------- PORTFOLIO ----------------- */
 
-.portfolio-button button {
+/* ----------------- BUTTONS ----------------- */
+
+.portfolio-buttons {
+  list-style: none;
+}
+
+.portfolio-buttons button {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
   letter-spacing: 0.03em;
-}
-
-.portfolio-button button {
-  background-color: #f5f4fa;
   color: var(--brand-color-main);
+  background-color: #f5f4fa;
+  border-style: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.portfolio-button button:hover,
-.portfolio-button button:focus {
+.portfolio-buttons button:hover,
+.portfolio-buttons button:focus {
   background-color: var(--brand-color-focus);
   color: #ffffff;
 }
 
-.portfolio-gallery h2 {
+/* ----------------- GALLERY ----------------- */
+
+.portfolio-gallery {
+  list-style: none;
+}
+
+.portfolio-gallery-main {
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -232,7 +243,7 @@ body {
   color: var(--brand-color-main);
 }
 
-.portfolio-gallery p {
+.portfolio-gallery-text {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
