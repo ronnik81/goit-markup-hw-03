@@ -400,6 +400,7 @@ header {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--brand-color-main);
+  margin-bottom: 4px;
 }
 
 .portfolio-gallery-text {
