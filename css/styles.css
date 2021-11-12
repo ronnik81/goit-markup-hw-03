@@ -43,6 +43,8 @@ body {
 
 .container {
   width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -78,7 +80,7 @@ body {
   margin-right: 93px;
 }
 
-/* ----------------- NAVIGATION ----------------- */
+/* ----------------- HEADER NAVIGATION ----------------- */
 
 .header-container {
   display: flex;
@@ -96,13 +98,14 @@ body {
   line-height: 1.17;
   letter-spacing: 0.02em;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .nav-item-link {
   color: var(--brand-color-main);
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .nav-item-link:hover,
@@ -128,6 +131,9 @@ body {
 .header-contact-link {
   color: var(--brand-color-text);
   text-decoration: none;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .header-contact-link:hover,
@@ -139,7 +145,7 @@ body {
   margin-left: 50px;
 }
 
-/* ----------------- HERO ----------------- */
+/* ----------------- MAIN HERO ----------------- */
 
 .hero-section {
   background-color: var(--brand-background-color);
@@ -172,9 +178,28 @@ body {
   letter-spacing: 0.06em;
   border-style: none;
   border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ----------------- FEATURES ----------------- */
+
+.features-section {
+  padding: 94px 0;
+}
+
+.features-list {
+  display: flex;
+}
+
+.features-item {
+  width: 270px;
+}
+
+.features-item {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .features-title {
   font-size: 14px;
   font-weight: 700;
@@ -182,6 +207,7 @@ body {
   letter-spacing: 0.03em;
   color: var(--brand-color-main);
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -193,26 +219,54 @@ body {
 
 /* ----------------- SERVISES ----------------- */
 
-.servises-title {
+.services-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--brand-color-main);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.services-list {
+  display: flex;
+  padding-bottom: 94px;
+}
+
+.services-list-item {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ----------------- TEAM ----------------- */
 
-.team {
+.team-section {
   background-color: #f5f4fa;
+  padding: 94px 0;
 }
 
-.team-title {
+.team-section-title {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--brand-color-main);
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.team-list {
+  display: flex;
+}
+
+.team-list-item {
+  background-color: #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .team-list-title {
@@ -221,6 +275,8 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--brand-color-main);
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .team-list-text {
@@ -228,19 +284,35 @@ body {
   line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--brand-color-text);
+  text-align: center;
+}
+
+.team-list-card {
+  padding: 30px 0;
 }
 
 /* ----------------- FOOTER ----------------- */
 
 .footer {
   background-color: var(--brand-background-color);
+  padding: 60px 0;
 }
+
+.footer-logo {
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  border: 1px solid green;
+}
+
 .footer-address {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   font-style: normal;
   color: #ffffff;
+  margin-bottom: 9px;
 }
 
 .footer-contacts {
@@ -254,6 +326,10 @@ body {
 .footer-contacts:hover,
 .footer-contacts:focus {
   color: var(--brand-color-focus);
+}
+
+.footer-contacts {
+  display: inline-block;
 }
 
 /* ----------------- PORTFOLIO ----------------- */
