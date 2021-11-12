@@ -299,11 +299,8 @@ body {
 }
 
 .footer-logo {
+  display: inline-block;
   margin-bottom: 20px;
-}
-
-.footer-list {
-  border: 1px solid green;
 }
 
 .footer-address {
@@ -312,7 +309,6 @@ body {
   letter-spacing: 0.03em;
   font-style: normal;
   color: #ffffff;
-  margin-bottom: 9px;
 }
 
 .footer-contacts {
@@ -328,8 +324,8 @@ body {
   color: var(--brand-color-focus);
 }
 
-.footer-contacts {
-  display: inline-block;
+.footer-list-item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 /* ----------------- PORTFOLIO ----------------- */
